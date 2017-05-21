@@ -12,3 +12,6 @@ __pycache__
 # virtualenv
 _venv
 
+# Nikola
+.doit.db
+output
