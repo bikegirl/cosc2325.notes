@@ -1,0 +1,14 @@
+# Mac
+.DS_Store
+
+# Vim
+*~
+*.swp
+
+# Python
+*.py[cod]
+__pycache__
+
+# virtualenv
+_venv
+

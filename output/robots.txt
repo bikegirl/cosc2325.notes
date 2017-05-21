@@ -1,0 +1,4 @@
+Sitemap: https://cosc2325.co-pylit.org/sitemapindex.xml
+
+User-Agent: *
+Host: cosc2325.co-pylit.org
