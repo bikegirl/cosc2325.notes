@@ -12,3 +12,5 @@ __pycache__
 # virtualenv
 _venv
 
+# Sphinx
+_build
