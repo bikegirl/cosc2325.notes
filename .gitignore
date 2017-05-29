@@ -14,3 +14,7 @@ _venv
 
 # Sphinx
 _build
+
+# misc
+unpublished
+
