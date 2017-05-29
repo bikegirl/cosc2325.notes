@@ -1,0 +1,12 @@
+Must Reads
+##########
+
+    * http://louistiao.me/posts/how-i-customized-my-nikola-powered-site/
+
+    * http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/
+
+    * https://twistedpairdevelopment.wordpress.com/2011/02/16/rules-for-properly-structuring-and-developing-a-c-project/
+
+	* https://github.com/cornell-brg/pymtl
+
+	* http://computationstructures.org/notes/stacks/notes.html
