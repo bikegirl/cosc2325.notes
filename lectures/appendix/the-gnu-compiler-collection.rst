@@ -4,8 +4,9 @@ The Gnu Compiler Collection
 ..  _`Free Software Foundation`:    http://www.fsf.org/
 ..  _`Richard Stallman`:            https://stallman.org/
 ..  _GCC:                           https://gcc.gnu.org/
+..  _Linux:                         https://www.linux.org/
 
-The Gnu_ project has developed a collection of incredible free software
+The *Gnu* (Gnu is not Unix) project has developed a collection of incredible free software
 development and system management tools. If you do not know about `Richard
 Stallman`_ and his `Free Software Foundation`_, you should look into it if you
 indent to develop software seriously. Although most of these tools are now

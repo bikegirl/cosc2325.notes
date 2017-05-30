@@ -1,0 +1,9 @@
+..  cssclass::	table-bordered
+..  cssclass::	table-striped
+..  csv-table::
+
+    Term:       , Summer 2017,,
+    Section:    , 001,,
+    Synonym:    , ,,
+    Lectures:   , TTh   , 5:30pm - 6:00pm   , HLC1 2412
+    Labs:       , TTh   , 6:05pm - 8:15pm   , HLC1 2412

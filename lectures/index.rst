@@ -6,9 +6,10 @@ COSC2325 Lecture Notes
    :maxdepth: 1
    :caption: Contents:
 
-   00_syllabus
+   syllabus/cosc2325-001/index
+   01_introduction/course-topics
    01_introduction/are-you-ready-to-code
-   01-introduction/system-setup
+   01_introduction/system-setup
 
 .. toctree::
    :maxdepth: 1

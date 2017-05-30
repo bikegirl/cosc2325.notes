@@ -14,6 +14,8 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.todo',
     'sphinx.ext.autosummary',
+    'sphinx_exts.tikz',
+    'sphinx_exts.circuits',
 ]
 templates_path = ['_templates']
 source_suffix = '.rst'
