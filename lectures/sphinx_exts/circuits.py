@@ -10,7 +10,7 @@
 """
 from sphinx.errors import SphinxError
 from sphinx.util.nodes import set_source_info
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 from docutils import nodes, utils
 from docutils.parsers.rst import directives
 

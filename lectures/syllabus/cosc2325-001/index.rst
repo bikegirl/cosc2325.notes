@@ -58,6 +58,5 @@ School Policies
 Tentative Class Schedule
 ************************
 
-..  include::   mapping.inc
 ..  include::   9week.inc
 

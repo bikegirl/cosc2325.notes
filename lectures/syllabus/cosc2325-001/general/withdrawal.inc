@@ -7,7 +7,7 @@ unsatisfactory, the instructor may withdraw students from the class.
 
 It is the student's responsibility to complete a Withdrawal Form in the
 Admissions Office if they wish to withdraw from this class. The last date to
-withdraw for this semester is Nov 19, 2015. It is not the responsibility of the
+withdraw for this semester is Jul 18, 2017. It is not the responsibility of the
 instructor to withdraw the students from their class even though the instructor
 has the prerogative to do so under the above listed circumstances.
 

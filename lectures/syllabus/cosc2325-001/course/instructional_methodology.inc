@@ -1,7 +1,7 @@
 Instructional Methodology:
 ==========================
 
-This course will have 2.4 hours of lecture and 2 hours of lab per week. If
+This course will have 6 hours of lecture and 3.5 hours of lab per week. If
 the students are unable to finish the assigned lab work within the lab time,
 they will need to visit the CIS open labs. Teaching methodology will be to use
 a hybrid approach utilizing traditional in-class lectures and lab sessions

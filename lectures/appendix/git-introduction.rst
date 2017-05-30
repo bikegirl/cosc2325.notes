@@ -1,8 +1,7 @@
 Git Introduction
 ################
 
-..  _`Linus Torvalds`:            https://en.wikipedia.org/wiki/Linus_Torvalds
-..  _Git:                         https://git-scm.com/
+..  include::   /references.inc
 
 What? 
 
