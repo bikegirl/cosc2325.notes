@@ -31,7 +31,7 @@ workstation.  Notes in the Appendix describe the process in more detail, or you
 can browse around on GitHUb_ for more information.
 
 All you need to do for this test is edit the ``README.rst`` file in the
-repository and set in your rel name.
+repository and set in your real name.
 
 Follow the steps we discussed in class to
 add the changes to your working copy, commit them, then push them back up to the
