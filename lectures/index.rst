@@ -28,6 +28,15 @@ Lecture 2: Tuesday, Jun 1
    01_introduction/UbuntuVM/VMSetup
    01_introduction/UbuntuVM/InstallingTools
 
+Assignments
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/HW1
+   assignments/HW2
+
 Appendix
 --------
 

@@ -84,7 +84,7 @@ You are already running Linux_, so relax!
 Virtual Machine Supervisor
 **************************
 
-There are several VM managmenet tools available. Some are free, some you need to buy.
+There are several VM management tools available. Some are free, some you need to buy.
 
 Windows PC
 ==========
@@ -129,7 +129,7 @@ We will be using a release of the Linux_ software called Ubuntu_. The latest
 release of this software is **Ubuntu 17.04** and it is freely available
 from this link
 
-    * `Ubuntu 17.04 LTS <https://www.ubuntu.com/download/server>`_
+    * `Ubuntu 16.04 LTS <https://www.ubuntu.com/download/server/thank-you?version=16.04.2&architecture=amd64>`_
 
 The CS lab machines have a GUI version of Ubuntu_ installed. We will not need
 that for this term. You are free to use the Desktop edition of the OS if you
@@ -145,13 +145,20 @@ The file you will download is an **ISO** file, which can be used to burn a DVD.
 You do not need to do that. Instead, we will use the **ISO** file directly when
 we set up the VM.
 
-INstalling the OS
+Installing the OS
 =================
+
+..  note::
+
+    I did a fresh install of everything on my Windows 10 PC for this class. See
+    the bottom of this page for those steps.
+
+Otherwise, continue  here:
 
 Here are some notes that will help you install Ubuntu_ in your new VM. These
 notes cover the GUI edition of Ubuntu_. If you use the Server edition, the
 process is nearly the same (except you use your keyboard, not the mouse for
-most things). If you are running VirtualBox, the process is also almost the
+most things). If you are running VirtualBox_, the process is also almost the
 same.
 
     * `Installing Ubuntu <UbuntuVM/VMSetup>`_
@@ -162,6 +169,100 @@ Installing the Tools
 Once you have your Linux_ system running, you need to install a few tools. Here is a link covering that:
 
     * `Installing Tools <UbuntuVM/InstallingTools>`_
+
+
+Fresh Install Notes
+*******************
+
+Vim
+===
+
+    * Download gvim80.exe from http://www.vim.org/download.php/
+
+    * Run installer, default location is **C:\Program Files (x86)\vim**
+
+    * Edit C:\Program Files (886\vim\_vimrc
+
+VMware Player
+=============
+
+    * Download `VMware Workstation Player 12 <https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/12_0>`_
+
+    * Run the installer. You will need to accept the license. Accept all
+      defaults unless you know what you are doing.
+
+Ubuntu Linux
+============
+
+    * Download `ubuntu-16.04.2-server-amd64.iso <https://www.ubuntu.com/download/server/thank-you?version=17.04&architecture=amd64>`_
+
+VM Setup
+========
+
+    * Launch VMware Player
+    
+    * Enter your email address (required), then "continue", "Finish"
+    
+    * Click "Create a new virtual machine"
+        
+        * "Skip this version" to bypass upgrading
+    
+    * Browse for your ISO file. Click "Open" when you select it.
+        
+        * Click "Next: after checking your selection
+        
+        * Fill in the form as you wish. Click "Next"
+        
+        * Give your VM a name, I use "COSC2325vm", click "Next"
+        
+        * 20GB is more than enough for a server. Use 40 for a GUI version. I
+          also use a single file for the disk image. Click on "Next"
+        
+        * Check settings, then "Finish" "Do not show this message" for any
+          popups.  Select "Download and Install" for Linux VMware tools
+
+The tools will be installed, then Ubuntu will be installed. When this is complete, you will be at a login prompt. Use the credentials you entered earlier.
+
+To shut down the server, click on the close button ("X" at top right, then
+select power off. You should not do this unless all files are saved. This
+"pulls the plug" on your machine. VMware will exit.
+
+    * Launch VMware again
+
+        * Your VM should be listed in the left panel. 
+        
+        * Click on that name, then click on "Edit virtual machine settings"
+    
+        * Click on the "Options" tab. 
+    
+        * Select VMware Tools, select "Synchronize guest time with host"
+        
+        * Select "Shared folders"
+        
+        * Check "Always enabled"
+        
+        * Click on the "Add" button
+        
+        * Browse to your class folder (where you will manage all class project
+          repos). The folder must exist. Edit the name you want to see in your
+          VM in the bottom text box, then click on "Next", then "Finish".
+          Select your VM and click on the green right triangle to start it.  I
+          got a message about problems with sata0. I checked "No" for the
+          question about trying this again.
+
+        * Start your VM and log  in
+
+With any luck, you should now have access to files in the shared folder you
+selected on your  host machine (Windows) from inside the VM. The place where
+your shared folder is set up is **/media/hgfs/folder-name**. This makes it easy
+to get files from your PC into the VM and out again.
+
+..  Warning::
+
+    If this does not work, see me. I had a false start and had to use a more
+    complicated process to get shared folders working on my PC.
+
+
 
 ..  vim:ft=rst spell:
 
