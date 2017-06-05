@@ -223,7 +223,7 @@ Github_. I am going to use TravisCI_ to automate running my tests.
 To do that, I need to add a simple control file to my repository. Here is the
 file I am going to use:
 
-..  literalinclude::    code/memory/.travis.yml
+..  literalinclude::    /code/memory/.travis.yml
     :caption: .travis.yml
 
 Not much to that. It simple tells the Travis CI server to build a Linux virtual

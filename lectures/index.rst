@@ -47,6 +47,7 @@ Lecture 3: Tuesday, Jun 6
    02_architecture/Dancing/the-computer-dance
    02_architecture/Performance/computer-performance
    assignments/Lab1/diary-of-a-mad-black-programmer
+   assignments/Lab1/testing-on-travisci
 
 Assignments
 ===========
