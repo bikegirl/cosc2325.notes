@@ -1,4 +1,4 @@
-..  _hw2
+..  _hw2:
 
 Homework 2: Time for a Time Out!
 ################################

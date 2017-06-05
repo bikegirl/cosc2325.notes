@@ -1,3 +1,5 @@
+..  _git-introduction:
+
 Git Introduction
 ################
 

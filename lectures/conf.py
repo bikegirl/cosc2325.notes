@@ -16,6 +16,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx_exts.tikz',
     'sphinx_exts.circuits',
+    'sphinxcontrib.bibtex',
 ]
 templates_path = ['_templates']
 source_suffix = '.rst'
@@ -29,7 +30,7 @@ author = 'Roie R. Black'
 version = 'SU17'
 release = 'SU17'
 language = None
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'code']
 pygments_style = 'sphinx'
 todo_include_todos = False
 

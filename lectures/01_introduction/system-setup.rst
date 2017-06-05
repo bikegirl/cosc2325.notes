@@ -161,14 +161,14 @@ process is nearly the same (except you use your keyboard, not the mouse for
 most things). If you are running VirtualBox_, the process is also almost the
 same.
 
-    * `Installing Ubuntu <UbuntuVM/VMSetup>`_
+    * `Installing Ubuntu <UbuntuVM/VMSetup.html>`_
 
 Installing the Tools
 ====================
 
 Once you have your Linux_ system running, you need to install a few tools. Here is a link covering that:
 
-    * `Installing Tools <UbuntuVM/InstallingTools>`_
+    * `Installing Tools <UbuntuVM/InstallingTools.html>`_
 
 
 Fresh Install Notes
