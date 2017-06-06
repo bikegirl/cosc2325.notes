@@ -1,6 +1,8 @@
 Lab1: Modeling Memory
 #####################
 
+..  _Catch: https://github.com/philsquared/Catch
+  
 The memory unit in a computer is conceptually a pretty simple component. In
 this lab, we will build a C++ class to model memory in a simple way. Later, we
 will add more features to this component.
@@ -9,6 +11,10 @@ will add more features to this component.
 
     This lab is a continuation of the work shown in this week's lab lecture.
     You should read through that before starting this assignment.
+
+Here is the invitation link for the project repository:
+
+    * `Lab1-Memory-Unit <https://classroom.github.com/assignment-invitations/e3e326c40521d2b17f08f78e3f63fc05>`_
 
 Basic Structure
 ***************
@@ -82,7 +88,7 @@ Here is the test code that you are to use to check your work.
 ..  literalinclude::    /code/Memory/tests/test_memory.cpp
     :linenos:
 
-This test code uses the Catch.hpp_ testing system. You will need to set up a
+This test code uses the Catch_ testing system. You will need to set up a
 project,as discussed in class, so these tests run properly. You also need to
 make sure the following commands work:
 

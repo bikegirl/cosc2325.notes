@@ -8,6 +8,11 @@ Glossary
 ..  glossary::
     :sorted:
 
+    memory
+        An array of data storage cells used by the procssor to store both
+        program instructions and data. In most systems, memory is an arry of
+        8-bit containers named "bytes".
+
     Domain Name
         Servers on the Internet are all part of some registered domain, which
         has a name associated with it. I own `pylit.org` for example. The last
