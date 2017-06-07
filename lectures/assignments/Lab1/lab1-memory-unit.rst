@@ -14,7 +14,7 @@ will add more features to this component.
 
 Here is the invitation link for the project repository:
 
-    * `Lab1-Memory-Unit <https://classroom.github.com/assignment-invitations/e3e326c40521d2b17f08f78e3f63fc05>`_
+    * `Lab1-Memory-Unit <https://classroom.github.com/assignment-invitations/d3032c6b2adfb9257d0b1762181ef801>`_
 
 Basic Structure
 ***************
