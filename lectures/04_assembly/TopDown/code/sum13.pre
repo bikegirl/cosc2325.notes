@@ -1,0 +1,40 @@
+unsigned int data [] = { 5,3,7,10,42,6,22, 15, 32 };
+unsigned int *dptr = &data[0];
+int odd = 0;
+
+char *msg1 = "%d";
+char *msg2 = " ";
+char *msg3 = "\n";
+char *fmt;
+int pdata = 0;
+
+int cnt;
+int sum;
+int flag;
+
+void display() {
+    fmt = msg1;;
+    pdata = cnt;
+    printf( fmt, pdata);
+    fmt = msg2;;
+    printf( fmt );
+    fmt = msg1;;
+    pdata = sum;;
+    printf( fmt, pdata);
+    fmt = msg3;;
+    printf( fmt );
+}
+
+int main(void) {
+    cnt = 0;;
+label1: flag = ( cnt == 9 );
+    if( flag ) goto label2;
+        flag = ( odd == 0 );
+    if( flag ) goto label3;;
+        sum += *(dptr + cnt);
+label3: odd = !odd;
+    cnt++;
+    display();;
+    goto label1;
+label2: display();;
+}

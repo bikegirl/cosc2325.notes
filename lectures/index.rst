@@ -70,6 +70,14 @@ Lecture 3: Thursday, Jun 8
    03_basics/sequential-circuits
    03_basics/algebraic-circuit-design
 
+Lecture 4: Tuesday, Jun 13
+**************************
+
+.. toctree::
+   :maxdepth: 1
+
+   04_assembly/TopDown/c-program-tear-down
+
 Appendix
 ********
 
