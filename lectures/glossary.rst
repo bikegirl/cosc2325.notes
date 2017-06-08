@@ -8,6 +8,19 @@ Glossary
 ..  glossary::
     :sorted:
 
+    Combinational
+        A circuitis combinational if it produces a new output any time theinput
+        changes. There is a delay as the signals wotk their way through the circuit.
+
+    Sequential
+        A circuit is sequential if itheoutputs depend on a clock signal, and a
+        previous state stored in the circuit. The state is usually stored in some kind
+        of register.
+
+    Propogation Delay
+        The time it takws for outputs to reach a stable value when inputs
+        change. 
+
     Domain Name
         Servers on the Internet are all part of some registered domain, which
         has a name associated with it. I own `pylit.org` for example. The last

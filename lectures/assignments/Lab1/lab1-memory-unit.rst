@@ -1,6 +1,8 @@
 Lab1: Modeling Memory
 #####################
 
+..  _Catch: https://github.com/philsquared/Catch
+
 The memory unit in a computer is conceptually a pretty simple component. In
 this lab, we will build a C++ class to model memory in a simple way. Later, we
 will add more features to this component.
@@ -35,12 +37,14 @@ file defining the class you need to complete.
 ..  literalinclude::    /code/Memory/include/Memory.h
     :linenos:
 
+We may need to alter this specification later. We will go over that in class.
+
 Behavior
 ********
 
 The methods defined in this class model the behavior of an object constructed
 from our class. We have provided methods to **read** and **write** data in the
-specification. Notice that these methods return nothing. SInceit takes time for
+specification. Notice that these methods return nothing. Since it takes time for
 the memory unit to do it's work, we need a way to model that delay time. In
 this assignment, we will use a simple integer counter to indicate how long it
 takes to do the required work. You will need to call the **ready** routine a
@@ -54,7 +58,7 @@ glacially slow in the processor's view!)
 Background Info
 ***************
 
-Most computers work on one fundamental chunkof data. That chunk is most often
+Most computers work on one fundamental chunk of data. That chunk is most often
 one of these sizes:
 
 ..  csv-table::
@@ -82,7 +86,7 @@ Here is the test code that you are to use to check your work.
 ..  literalinclude::    /code/Memory/tests/test_memory.cpp
     :linenos:
 
-This test code uses the Catch.hpp_ testing system. You will need to set up a
+This test code uses the Catch_ testing system. You will need to set up a
 project,as discussed in class, so these tests run properly. You also need to
 make sure the following commands work:
 

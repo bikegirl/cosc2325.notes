@@ -58,20 +58,89 @@ Assignments
    assignments/HW3
    assignments/Lab1/lab1-memory-unit
 
+Lecture 3: Thursday, Jun 8
+**************************
+
+.. toctree::
+   :maxdepth: 1
+
+   03_basics/data-encoding
+   03_basics/boolean-algebra
+   03_basics/combinational-circuits
+   03_basics/sequential-circuits
+   03_basics/algebraic-circuit-design
+
 Appendix
 ********
+
+Nothing in this section will appear on any exams in this course. These notes
+cover tools you should know about as a software developer!
+
+The Developers Toolkit
+======================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/vim-introduction
+   appendix/the-gnu-compiler-collection
+
+Working on the Command Line
+===========================
 
 .. toctree::
    :maxdepth: 1
 
    appendix/working-on-the-command-line
+
+Organizing Your Project
+=======================
+
+.. toctree::
+   :maxdepth: 1
+
    appendix/project-layout
-   appendix/development-timeline
+
+Documenting Your Code
+=====================
+
+.. toctree::
+   :maxdepth: 1
+
    appendix/documentation
-   appendix/git-introduction
-   appendix/vim-introduction
-   appendix/make-introduction
-   appendix/the-gnu-compiler-collection
+
+Source Code Control Systems
+===========================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/Git/quick-introduction-to-git
+   appendix/Git/git-for-windows
+   appendix/Git/how-git-works
+   appendix/Git/the-programmers-timeline
+   appendix/Git/the-git-timeline
+   appendix/Git/using-git
+
+Building Your Project
+=====================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/Make/make-introduction
+   appendix/Make/advanced-makefiles
+   appendix/Make/writing-makefiles
+   appendix/Make/organizing-makefiles
+
+
+Testing Your Project
+====================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/travisci-introduction
 
 Bibliography
 ************

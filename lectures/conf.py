@@ -16,6 +16,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx_exts.tikz',
     'sphinx_exts.circuits',
+    'sphinx.ext.graphviz',
     'sphinxcontrib.bibtex',
 ]
 templates_path = ['_templates']
