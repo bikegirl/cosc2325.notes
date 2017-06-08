@@ -20,6 +20,11 @@ Glossary
     Propogation Delay
         The time it takws for outputs to reach a stable value when inputs
         change. 
+    
+    memory
+        An array of data storage cells used by the procssor to store both
+        program instructions and data. In most systems, memory is an arry of
+        8-bit containers named "bytes".
 
     Domain Name
         Servers on the Internet are all part of some registered domain, which

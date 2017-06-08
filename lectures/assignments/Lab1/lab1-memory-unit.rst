@@ -2,7 +2,7 @@ Lab1: Modeling Memory
 #####################
 
 ..  _Catch: https://github.com/philsquared/Catch
-
+  
 The memory unit in a computer is conceptually a pretty simple component. In
 this lab, we will build a C++ class to model memory in a simple way. Later, we
 will add more features to this component.
@@ -11,6 +11,10 @@ will add more features to this component.
 
     This lab is a continuation of the work shown in this week's lab lecture.
     You should read through that before starting this assignment.
+
+Here is the invitation link for the project repository:
+
+    * `Lab1-Memory-Unit <https://classroom.github.com/assignment-invitations/d3032c6b2adfb9257d0b1762181ef801>`_
 
 Basic Structure
 ***************

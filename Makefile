@@ -1,5 +1,7 @@
-LOCALDIR = /Users/rblack/_github/cosc2325.notes/lectures/_build/html/
-REMOTEDIR = www/classes/summer2017/cosc2325-001/
+LOCALDIR    := /Users/rblack/_github/cosc2325.notes/lectures/_build/html/
+REMOTEDIR   := www/classes/summer2017/cosc2325-001/
+SSHPORT     := 5224
+    
 
 all:
 	cd lectures && make html
@@ -17,5 +19,5 @@ reqs:
 	pip install -r requirements.txt
 
 sync:
-	rsync -rvz -e 'ssh -p 5224' $(LOCALDIR) rblack@www.co-pylit.org:$(REMOTEDIR)
+	rsync -rvz -e 'ssh -p $(SSHPORT)' $(LOCALDIR) rblack@www.co-pylit.org:$(REMOTEDIR)
 
