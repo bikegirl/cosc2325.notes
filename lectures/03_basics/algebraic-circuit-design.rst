@@ -3,6 +3,10 @@
 Algebraic Circuit Design
 ########################
 
+..  include::   /references.inc
+
+..  wordcount::
+
 It is easy to see the connection between Boolean Algebra and digital circuits.
 What takes some work is seeing how to use math to simplify what might be a very
 complex digital system. We will take a peek at that process in this section.

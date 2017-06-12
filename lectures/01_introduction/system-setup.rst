@@ -3,6 +3,8 @@ System Setup
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 Hopefully, you own a relatively recent laptop, and use it in your classwork.
 You can use the department lab systems, but you will be much more productive if
 you keep your laptop handy

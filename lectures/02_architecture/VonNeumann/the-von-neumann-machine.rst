@@ -3,6 +3,10 @@
 The Von Neumann Machine
 #######################
 
+..  include::   /references.inc
+
+..  wordcount::
+
 John Von Neumann was an important figure in the history of computing.
 
 ..  image:: JohnVonNeumann.jpg

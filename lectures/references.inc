@@ -11,7 +11,7 @@
 
 ..  _ACM:           http://www.acm.org
 ..  _Adafruit:      http://www.adafruit.com/
-..  +Alpine:        https://alpinelinux.org/
+..  _Alpine:        https://alpinelinux.org/
 ..  _Amazon:        https://aws.amazon.com/
 ..  _Ansible:       http://www.ansible.com/home
 ..  _Apache:        http://httpd.apache.org/
@@ -72,6 +72,7 @@
 ..  _Sphinx:        http://sphinx-doc.org/
 ..  _Sphinx-Tut:    https://pypi.python.org/pypi/tut
 ..  _SWIG:          http://www.swig.org/
+..  _TravisCI:      https://travis-ci.org/
 ..  _Teensy:        http://www.pjrc.com/
 ..  _TeX:           http://tug.org/
 ..  _Trac:          http://trac.edgewall.org/

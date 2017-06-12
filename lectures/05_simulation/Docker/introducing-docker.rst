@@ -5,6 +5,8 @@ Introducing Docker
 
 :Reference: http://www.ybrikman.com/writing/2015/05/19/docker-osx-dev/
 
+..  wordcount::
+
 So far this term, you have been working on a Linux virual machine installed on
 your host computer. I hope you are beginning to see the value in being able to
 set up a totally separate environment on your machine, even one that runs a

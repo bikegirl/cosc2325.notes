@@ -77,6 +77,7 @@ Lecture 5: Tuesday, Jun 13
    :maxdepth: 1
 
    04_assembly/TopDown/c-program-tear-down
+   05_simulation/SimulatorDesign/designing-a-simulator
 
 Assignments
 ===========

@@ -5,6 +5,8 @@ Basic Digital Gates
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 The connection between Boolean Algebra and Digital Circuits can be seen in the
 fundamental building blocks of modern computer systems.
 

@@ -3,6 +3,8 @@ C Program Tear-Down
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  image:: Edsger_Wybe_Dijkstra.jpg
     :align: center
     :width: 300

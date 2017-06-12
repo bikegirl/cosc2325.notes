@@ -5,6 +5,8 @@ Installing Tools in Ubuntu
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  _`git-introduction`:  /courses/general/Git/index.html
 ..  _`installing-vim`:    /courses/general/Vim/index.html
 

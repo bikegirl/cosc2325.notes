@@ -5,6 +5,8 @@
 Data Encoding
 #############
 
+..  wordcount::
+
 :Readings: Appendix A (A.1 - A.3)
 
 We have seen that computers use simple binary digits to represent anything we

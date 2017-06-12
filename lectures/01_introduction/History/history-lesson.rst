@@ -1,6 +1,8 @@
 History Lesson
 ##############
 
+..  wordcount::
+
 Computers were invented to help us do math quickly!
 
 But how do they do this?

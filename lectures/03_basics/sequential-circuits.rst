@@ -3,6 +3,8 @@ Storing Bits
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  seealso::   Appendix (A.8)
 
 The digital components we have seen up to now are not enough to build a
