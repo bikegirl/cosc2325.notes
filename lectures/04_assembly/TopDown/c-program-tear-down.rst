@@ -155,7 +155,7 @@ Let's modify the program so it does this:
 ..  literalinclude::    code/sum2.c
     :linenos:
     :lines: 11-21
-    :emphasize-lines: 13,19
+    :emphasize-lines: 3,9
 
 Do you see how this is set up. We evaluate the logical expression and use that
 to decide if we branch around the loop body. We have two **goto** statements
@@ -180,7 +180,7 @@ let's call it **flag**:
 ..  literalinclude::    code/sum3.c
     :linenos:
     :lines: 7-23
-    :emphasize-lines: 9, 15, 22
+    :emphasize-lines: 2, 8, 15
 
 Now, our conditional jump is much simpler. Let's do the same thing with the
 second **if statement**:
@@ -188,7 +188,7 @@ second **if statement**:
 ..  literalinclude::    code/sum4.c
     :linenos:
     :lines: 12-23
-    :emphasize-lines: 16, 18
+    :emphasize-lines: 4, 6
 
 Nothing Up My Sleeve!
 *********************
@@ -237,7 +237,7 @@ and the absolute branch with something that looks like a **JMP** instruction:
 ..  literalinclude::    code/sum5.c
     :linenos:
     :lines: 13-25
-    :emphasize-lines: 15-18, 23
+    :emphasize-lines: 2-5, 10
 
 Now that is nice! We are finally starting to see something more like assembly
 code in this file!
@@ -270,7 +270,7 @@ With these, our code becomes this:
 ..  literalinclude::    code/sum6.c
     :linenos:
     :lines: 13-25
-    :emphasize-lines: 14, 20, 21
+    :emphasize-lines: 1, 7, 8
 
 Wow!, only a few more lines to go! 
 

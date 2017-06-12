@@ -11,8 +11,7 @@ project. In school, you hardly ever hear about this, and my goal is to change
 that.
 
 We will be using Git_ to manage the code you write for my classes. This tool,
-written by the creator of Linux, `Linus Torvalds
-<http://en.wikipedia.org/wiki/Linus_Torvalds>`_, is arguably the most popular
+written by the creator of Linux, `Linus Torvalds`_, is arguably the most popular
 :term:`SCCS` tool around today. I have asked the lab techs to install it in the
 classroom systems, and it should be available by the time we start working on
 real lab work. Git_ is available on every platform, so you should be able to
