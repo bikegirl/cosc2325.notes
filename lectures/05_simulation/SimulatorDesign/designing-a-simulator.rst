@@ -3,7 +3,7 @@ Designing a Simulator
 
 ..  include::   /references.inc
 
-..  wordcount
+..  wordcount::
 
 Real computers are made up of a (potentially large) number of very simple
 digital components. These components are interconnected by wires, used to
@@ -171,10 +171,10 @@ typical sequential component.
 ..  note::
 
     Formally, this is a version of a *Moore Machine* which you will run into
-when you study *Finite State Machines* in later courses. In a real Moore
-Machine, the current register output can be fed back to the input and be
-involved in the input combinational logic. We will not be using that for our
-work 
+    when you study *Finite State Machines* in later courses. In a real Moore
+    Machine, the current register output can be fed back to the input and be
+    involved in the input combinational logic. We will not be using that for our
+    work 
 
 In this diagram, we see two internal combinational components that can alter
 the incoming and outgoing signals. Those two blocks in the middle are where the
