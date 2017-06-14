@@ -58,7 +58,7 @@ Assignments
    assignments/HW3
    assignments/Lab1/lab1-memory-unit
 
-Lecture 3: Thursday, Jun 8
+Lecture 4: Thursday, Jun 8
 **************************
 
 .. toctree::
@@ -70,13 +70,32 @@ Lecture 3: Thursday, Jun 8
    03_basics/sequential-circuits
    03_basics/algebraic-circuit-design
 
-Lecture 4: Tuesday, Jun 13
+Lecture 5: Tuesday, Jun 13
 **************************
 
 .. toctree::
    :maxdepth: 1
 
    04_assembly/TopDown/c-program-tear-down
+   05_simulation/SimulatorDesign/designing-a-simulator
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/HW4/how-fast-is-my-code
+   assignments/Lab2/lab2-alu-unit
+
+
+Lecture 6: Thursday, Jun 15
+***************************
+
+.. toctree::
+   :maxdepth: 1
+
+   05_simulation/Docker/introducing-docker
 
 Appendix
 ********
@@ -129,6 +148,8 @@ Source Code Control Systems
    appendix/Git/the-programmers-timeline
    appendix/Git/the-git-timeline
    appendix/Git/using-git
+   appendix/Git/setting-up-on-github
+   appendix/Git/getting-started-on-github
 
 Building Your Project
 =====================

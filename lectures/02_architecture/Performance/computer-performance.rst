@@ -1,6 +1,10 @@
 Computer Performance
 ####################
 
+..  include::   /references.inc
+
+..  wordcount::
+
 We all seem to want our machines to be fast, and we measure performance by how
 fast the clock is for a start. But what really make a machine perform
 effectively, and how do we improve things to get better performance out of one?

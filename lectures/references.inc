@@ -11,6 +11,7 @@
 
 ..  _ACM:           http://www.acm.org
 ..  _Adafruit:      http://www.adafruit.com/
+..  _Alpine:        https://alpinelinux.org/
 ..  _Amazon:        https://aws.amazon.com/
 ..  _Ansible:       http://www.ansible.com/home
 ..  _Apache:        http://httpd.apache.org/
@@ -21,6 +22,8 @@
 ..  _Chef:          https://www.chef.io/
 ..  _`Course Technology`:   http://solutions.cengage.com/brands/course-technology/
 ..  _CSS3:          http://www.w3schools.com/css/css3_intro.asp
+..  _Docker:        https://www.docker.com/
+..  _`Docker Cloud`: https://cloud.docker.com/
 ..  _docutils:      http://docutils.sourceforge.net/
 ..  _DropBox:       https://www.dropbox.com
 ..  _DynDNS:        http://dyndns.com/
@@ -50,7 +53,9 @@
 ..  _Make:          https://www.gnu.org/software/make/
 ..  _MikTeX:        http://miktex.org/
 ..  _MinGW:         http://mingw-w64.sourceforge.net/
+..  _MySQL:         https://www.mysql.com/
 ..  _Nasm:          http://nasm.us/
+..  _Nginx:         https://www.nginx.com/
 ..  _Oracle:        http://www.oracle.com/index.html
 ..  _OpenGL:        https://www.opengl.org/
 ..  _Parallax:      https://www.parallax.com/
@@ -67,6 +72,7 @@
 ..  _Sphinx:        http://sphinx-doc.org/
 ..  _Sphinx-Tut:    https://pypi.python.org/pypi/tut
 ..  _SWIG:          http://www.swig.org/
+..  _TravisCI:      https://travis-ci.org/
 ..  _Teensy:        http://www.pjrc.com/
 ..  _TeX:           http://tug.org/
 ..  _Trac:          http://trac.edgewall.org/

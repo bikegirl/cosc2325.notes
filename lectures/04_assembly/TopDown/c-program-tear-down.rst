@@ -3,6 +3,8 @@ C Program Tear-Down
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  image:: Edsger_Wybe_Dijkstra.jpg
     :align: center
     :width: 300
@@ -154,7 +156,8 @@ Let's modify the program so it does this:
 
 ..  literalinclude::    code/sum2.c
     :linenos:
-    :lines: 12-22
+    :lines: 11-21
+    :emphasize-lines: 3,9
 
 Do you see how this is set up. We evaluate the logical expression and use that
 to decide if we branch around the loop body. We have two **goto** statements
@@ -179,6 +182,7 @@ let's call it **flag**:
 ..  literalinclude::    code/sum3.c
     :linenos:
     :lines: 7-23
+    :emphasize-lines: 2, 8, 15
 
 Now, our conditional jump is much simpler. Let's do the same thing with the
 second **if statement**:
@@ -186,6 +190,7 @@ second **if statement**:
 ..  literalinclude::    code/sum4.c
     :linenos:
     :lines: 12-23
+    :emphasize-lines: 4, 6
 
 Nothing Up My Sleeve!
 *********************
@@ -234,6 +239,7 @@ and the absolute branch with something that looks like a **JMP** instruction:
 ..  literalinclude::    code/sum5.c
     :linenos:
     :lines: 13-25
+    :emphasize-lines: 2-5, 10
 
 Now that is nice! We are finally starting to see something more like assembly
 code in this file!
@@ -266,6 +272,7 @@ With these, our code becomes this:
 ..  literalinclude::    code/sum6.c
     :linenos:
     :lines: 13-25
+    :emphasize-lines: 1, 7, 8
 
 Wow!, only a few more lines to go! 
 

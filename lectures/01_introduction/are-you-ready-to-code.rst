@@ -3,6 +3,8 @@ Are You Ready to Code?
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  _`ACM-ICPC`:    https://icpc.baylor.edu/
 
 

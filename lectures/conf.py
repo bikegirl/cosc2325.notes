@@ -16,6 +16,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx_exts.tikz',
     'sphinx_exts.circuits',
+    'sphinx_exts.wordcount',
     'sphinx.ext.graphviz',
     'sphinxcontrib.bibtex',
 ]

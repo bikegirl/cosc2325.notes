@@ -5,6 +5,8 @@ The Computer Dance
 
 ..  include::   /references.inc
 
+..  wordcount::
+
 ..  seealso::   Text: Chapter 1
 
 Machines are often thought of as physical things. But more and more, we
