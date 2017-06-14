@@ -3,6 +3,8 @@
 Boolean Algebra
 ###############
 
+..  include::   /references.inc
+
 Math can be a lot of fun. (OK, so many folks cannot believe math can be called
 fun, but over the course of history, it sure has gotten a lot of attention.)
 

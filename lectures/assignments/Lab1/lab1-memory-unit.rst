@@ -77,6 +77,47 @@ There are signed versions of these as well. For our memory module, we will use
 these, since the memory has no clue about signed data. Bits is bits! To use
 these data types you need to include the **cstdlib** header. 
 
+Breaking Up Data
+================
+
+We need to be able to break up a big pile of bits into 8-bit chunks. C/C++ can
+help here. Here is some code that will help
+
+..  code-block:: c
+
+    #include <stdio.h>
+
+    int main( void ) {
+        unsigned long x = 0x11223344;   // 32 bits
+
+        printf("Shifty bits\n");
+        printf("0x%08lx\n", x);
+        printf("0x%08lx\n", x >> 8);
+        printf("0x%08lx\n", x >> 16);
+        printf("0x%08lx\n", x >> 24);
+        printf("0x%08lx\n", (x >> 8) & 0xff);
+    }
+
+The ">>" is a right shift operator here (see it is not used just for input).
+The "&" is a logical **AND** operation, which ends up stripping away all of the
+bits in the variable except for the low 8-bits. Thisis called "masking" of the
+unwanted bits. by shifting and masking, we can isolate the set of bits we want
+and stuff them into a single 8-bit memory container.
+
+Assembling Data
+===============
+
+Going the other way, we need to read the bytes and assemble a bigger data item.
+This time, all we need to do is shift and add. We could also use the **OR**
+operator ("|") to accomplish the same thing (faster, by the way):
+
+..  code-block:: c
+
+    x = byteval1 | (byteval2 << 8 ) | (byteval3 << 16) | (byteval4 << 24);
+
+Think about that. Should it work? Better yet, try that out in the simple example above.
+
+    
 Testing Your Class
 ******************
 
@@ -103,4 +144,14 @@ make sure the following commands work:
 You should see no errors when this sequence completes. If you get here, your
 code works as specified. Guido and I will review the code itself to see if it
 is written properly!
+
+Final Notes
+***********
+
+For this lab, the initial provided test is pretty lame. You are free to modify
+this class specification, as you feel is needed to build something that really
+works. 9hint, overloading **read** and **write** is surely a good idea. YYu are
+also free to add/change the test code. Use the provided test function a a model
+(look into the catch_ docs) and add at least one really good test for your
+class.
 

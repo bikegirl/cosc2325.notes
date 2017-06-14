@@ -154,8 +154,7 @@ Let's modify the program so it does this:
 
 ..  literalinclude::    code/sum2.c
     :linenos:
-    :lines: 11-21
-    :emphasize-lines: 13,19
+    :lines: 12-22
 
 Do you see how this is set up. We evaluate the logical expression and use that
 to decide if we branch around the loop body. We have two **goto** statements
@@ -180,7 +179,6 @@ let's call it **flag**:
 ..  literalinclude::    code/sum3.c
     :linenos:
     :lines: 7-23
-    :emphasize-lines: 9, 15, 22
 
 Now, our conditional jump is much simpler. Let's do the same thing with the
 second **if statement**:
@@ -188,7 +186,6 @@ second **if statement**:
 ..  literalinclude::    code/sum4.c
     :linenos:
     :lines: 12-23
-    :emphasize-lines: 16, 18
 
 Nothing Up My Sleeve!
 *********************
@@ -237,7 +234,6 @@ and the absolute branch with something that looks like a **JMP** instruction:
 ..  literalinclude::    code/sum5.c
     :linenos:
     :lines: 13-25
-    :emphasize-lines: 15-18, 23
 
 Now that is nice! We are finally starting to see something more like assembly
 code in this file!
@@ -270,7 +266,6 @@ With these, our code becomes this:
 ..  literalinclude::    code/sum6.c
     :linenos:
     :lines: 13-25
-    :emphasize-lines: 14, 20, 21
 
 Wow!, only a few more lines to go! 
 
@@ -340,7 +335,6 @@ array:
 
 ..  literalinclude::    code/sum9.c
     :linenos:
-    :emphasize-lines: 8, 20    
 
 If you are weak on pointers, do a little research before working this one out.
 It still produces the same output. (Phew!)
@@ -390,7 +384,6 @@ And our new code:
 
 ..  literalinclude::    code/sum12.c
     :linenos:
-    :emphasize-lines: 41
 
 ..  warning::
 
@@ -442,7 +435,14 @@ says to do.
 ..  literalinclude::    code/sum14.asm
     :linenos:
 
-If you look closely at these last two files, you will see one fundamental difference tht I am not going to fix. (You might try that as an exercise). There are several places where I am referencing variables in memory directly. In fact, the assembly language moves some data into internal registers, and I did not set up any of those in this example. Since the processor cannot reference two memory items in the same line, those instances clearly need to be fixed. That should be easy enough, but I have accomplished my basic goal in what we see here.
+If you look closely at these last two files, you will see one fundamental
+difference tht I am not going to fix. (You might try that as an exercise).
+There are several places where I am referencing variables in memory directly.
+In fact, the assembly language moves some data into internal registers, and I
+did not set up any of those in this example. Since the processor cannot
+reference two memory items in the same line, those instances clearly need to be
+fixed. That should be easy enough, but I have accomplished my basic goal in
+what we see here.
 
 What Instructions Did We Need
 *****************************
@@ -451,16 +451,16 @@ It is worthwhile examining exactly what assembly language constructs we needed
 from all those available in the Pentium to get this code running. Here is a
 summary:
 
+    * **ADD** - add two data items as integers
+    * **CALL** - branch to a function
     * **CMP** - see how two data items relate
+    * **INC** - increment a data item (very common action)
     * **JMP** - absolute branch
     * **JZ** - conditional branch
     * **MOV** - copy data from one place to another
-    * **CALL** - branch to a function
-    * **RET** - return from a function
-    * **INC** - increment a data item (very common action)
-    * **ADD** - add two data items as integers
     * **MUL** - multiply two data items as integers
     * **NOT** - logical compliment of a binary value
+    * **RET** - return from a function
 
 There are different forms of a few of these, but that is not many for a
 moderate **C** program.

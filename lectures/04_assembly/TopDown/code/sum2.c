@@ -6,7 +6,8 @@ unsigned int data[] = {
 
 int cnt;
 int sum;
-unsigned int odd = 0;
+unsigned int odd = 0;:set number
+uuu
 
 int main( void ) {
         cnt = 0;
