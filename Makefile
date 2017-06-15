@@ -13,7 +13,7 @@ pdf:
 	cd lectures && make latexpdf
 
 venv:
-	virtualenv _venv
+	python3 -m venv _venv
 
 reqs:
 	pip install -r requirements.txt

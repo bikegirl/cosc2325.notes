@@ -29,5 +29,4 @@ def process_wordcount_nodes(app, doctree, fromdocname):
         para += nodes.Text("[Estimated time to read %d minutes (%d words)]" % (count / 250, count))
         node.replace_self([para])
         
-        
 

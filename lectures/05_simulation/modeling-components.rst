@@ -1,5 +1,5 @@
-Modeling Components in C++
-##########################
+Modeling Components
+###################
 
 ..  include::   /references.inc
 

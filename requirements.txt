@@ -2,3 +2,6 @@ sphinx==1.6.1
 isso==0.10.6
 sphinx-better-theme==0.13
 Sphinxcontrib-bibtex
+pyenchant==1.6.8
+sphinxcontrib-spelling
+

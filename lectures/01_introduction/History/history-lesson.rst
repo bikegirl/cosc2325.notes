@@ -157,7 +157,10 @@ We call the number of symbols in our number system the base of that system
 
 Our base is 10, the eight fingered folks base is 8 (only eight symbols)
 
-So for them, the columns are the 1's, 8's, 64's, etc. Except, they would not have called them this, since those numbers are base 10! Yikes, they would have said 10, but to us they would mean 8. Boy, all of that would have been confusing!
+So for them, the columns are the 1's, 8's, 64's, etc. Except, they would not
+have called them this, since those numbers are base 10! Yikes, they would have
+said 10, but to us they would mean 8. Boy, all of that would have been
+confusing!
 
 Hmmm, each column is really the base raised to some power
 

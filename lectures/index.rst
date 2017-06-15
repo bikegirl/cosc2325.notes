@@ -65,6 +65,7 @@ Lecture 4: Thursday, Jun 8
    :maxdepth: 1
 
    03_basics/data-encoding
+   03_basics/number-conversions
    03_basics/boolean-algebra
    03_basics/combinational-circuits
    03_basics/sequential-circuits
@@ -77,7 +78,7 @@ Lecture 5: Tuesday, Jun 13
    :maxdepth: 1
 
    04_assembly/TopDown/c-program-tear-down
-   05_simulation/SimulatorDesign/designing-a-simulator
+   05_simulation/designing-a-simulator
 
 Assignments
 ===========
@@ -91,6 +92,21 @@ Assignments
 
 Lecture 6: Thursday, Jun 15
 ***************************
+
+.. toctree::
+   :maxdepth: 1
+
+   05_simulation/simulating-circuits
+   05_simulation/simulator-bus-structure
+   05_simulation/modeling-components
+   exams/exam-1-review
+
+Lecture 7: Tuesday, June 20
+***************************
+
+** Exam 1 ** 
+
+    You will have two hours to complete this exam.
 
 .. toctree::
    :maxdepth: 1

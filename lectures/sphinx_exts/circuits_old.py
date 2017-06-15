@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    sphinx.ext.tikz
-    ~~~~~~~~~~~~~~~
+    sphinx.ext.circuits
+    ~~~~~~~~~~~~~~~~~~~
 
-    Include TiKz graphics in Sphinx documents
+    Include TiKz icircuits in Sphinx documents
 
     :copyright: 2016 by Roie R. Blacl
     :license: BSD, see LICENSE for details
@@ -16,33 +16,47 @@ from docutils.parsers.rst import directives
 
 import os
 import shutil
-import tempfile
 from hashlib import sha1
+import posixpath
 
 LATEX_IMAGE_DIR = '/Users/rblack/_lib/images/'
 IMAGE_URL = '/_images/'
 LATEX_BUILD_DIR = '/Users/rblack/_acc/tmp/images'
+BUILD_TMPDIR = '/Users/rblack/_lib/tikz'
 
-class TikzExtError(SphinxError):
+class CircuitsExtError(SphinxError):
     category = 'Tikz extension error'
+
+    def __init__(self, msg, stderr=None, stdout=None):
+        if stderr:
+            msg += '\n[stderr]\n' + stderr.decode(sys_encoding, 'replace')
+        if stdout:
+            msg += '\n[stdout]\n' + stdout.decode(sys_encoding, 'replace')
+        SphinxError.__init__(self, msg)
 
 DOC_HEAD = r'''\documentclass[preview]{standalone}
 \usepackage{tikz}
+%s
 '''
 
 DOC_BODY = r'''
 \begin{document}
-\begin{tikzpicture}
+\tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+\begin{tikzpicture}%s
 %s
 \end{tikzpicture}
 \end{document}
 '''
 
-class RenderTikzImage(object):
+class RenderCircuitsImage(object):
 
-    def __init__(self, text, font_size=11):
-        print("Rendering", text, os.getcwd())
+    def __init__(self, text, tikzopts, tikzlibs, builder, font_size=11):
+        #print "Rendering", text, os.getcwd()
         self.text = text
+        self.tikzopts = tikzopts
+        self.tikzlibs = tikzlibs
+        #print "Options:", tikzopts, tikzlibs
+        self.builder = builder
         self.font_size = font_size
         self.imagedir = os.path.join(os.getcwd(),
         '_build','html','_images')
@@ -50,15 +64,15 @@ class RenderTikzImage(object):
     def render(self):
         '''return name of final rendered image file'''
         shasum = "%s.png" % sha1(self.text.encode('utf-8')).hexdigest()
-        relfn = posixpath.join(self.builder.imgpath, 'tikz',shasum)
-        outfn = os.path.join(self.builder.outdir, self.imagedir, 'tikz', shasum)
+        relfn = posixpath.join(self.builder.imgpath, 'circuits',shasum)
+        outfn = os.path.join(self.builder.outdir, self.imagedir, 'circuits', shasum)
         
         if os.path.exists(outfn):
-            return hname
+            return relfn, outfn
 
-        # create temp file for running lates
-        printr("Rendering latex image as pdf", hash + '.png')
-        tempdir = tempfile.mkdtemp()
+        # create temp file for running latex
+        #print "Rendering latex image as pdf", outfn
+        tempdir = BUILD_TMPDIR
         curpath = os.getcwd()
         os.chdir(tempdir)
 
@@ -67,36 +81,35 @@ class RenderTikzImage(object):
 
         # run pdflates to build pdf file
         status = os.system('pdflatex --interaction=nonstopmode tikz')
-        assert 0 == status, tempdir
+        assert 0 == status
 
         # convert to png file
         status = os.system('convert -density 300 tikz.pdf -quality 90 tikz.png')
 
         # copy final image to image dir
         os.chdir(curpath)
-        imagepath = os.path.abspath(self.imagedir)
+        imagepath = os.path.join(os.path.abspath(self.imagedir),'circuits')
         if not os.path.exists(imagepath):
             os.makedirs(imagepath)
-        print("Copying file to ", imagepath, outfn)
+        #print "Copying file to ", imagepath, outfn
         shutil.copyfile(os.path.join(tempdir, "tikz.png"), outfn)
-        shutil.rmtree(tempdir)
-        return hname
+        #shutil.rmtree(tempdir)
+        return relfn, outfn
 
     def wrap_text(self):
-        latex = DOC_HEAD 
-        latex += (DOC_BODY) % self.text
+        latex = DOC_HEAD % self.tikzlibs
+        latex += (DOC_BODY) % (self.tikzopts, self.text)
 
         # write latex file
         f = open('tikz.tex','w')
-
         f.write(latex)
         f.close()
 
 
-class tikz(nodes.General, nodes.Element):
+class circuits(nodes.General, nodes.Element):
     pass
 
-class Tikz(Directive):
+class Circuits(Directive):
 
     has_content = True
     required_arguments = 0
@@ -108,12 +121,13 @@ class Tikz(Directive):
         'nowrap': directives.flag,
         'width': directives.unchanged,
         'align': directives.unchanged,
-
+        'tikzopts': directives.unchanged,
+        'tikzlibs': directives.unchanged,
     }
 
     def run(self):
         latex = '\n'.join(self.content)
-        node = tikz()
+        node = circuits()
         node['latex'] = latex
         node['label'] = None
         node['docname'] = self.state.document.settings.env.docname
@@ -124,17 +138,32 @@ class Tikz(Directive):
             style += ' class="align-%s"' % self.options['align']
         node['style'] = style
 
+        if 'tikzopts' in self.options:
+            tikzopts = '[%s]' % self.options['tikzopts']
+        else:
+            tikzopts = ''
+
+        node['tikzopts'] = tikzopts
+
+        if 'tikzlibs' in self.options:
+            tikzlibs = '\\usetikzlibrary{%s}' % self.options['tikzlibs']
+        else:
+            tikzlibs = ''
+        node['tikzlibs'] = tikzlibs
+
         ret = [node]
         set_source_info(self,node)
         return ret
 
-def html_visit_tikz(self, node):
+def html_visit_circuits(self, node):
     latex = node['latex']
+    opts = node['tikzopts']
+    libs = node['tikzlibs']
     try:
         imagedir = self.builder.imgpath
-        fname = RenderTikzImage(latex).render()
-        print("Rendered imge:", fname)
-    except TikzExtError as exc:
+        fname, relfn = RenderCircuitsImage(latex, opts, libs, self.builder).render()
+        #print "Rendered imge:", fname, relfn
+    except CircuitsExtError as exc:
         msg = text_type(exc)
         sm = nodes.system_message(msg, type='WARNING', level=2,
                                   backrefs=[], source=node['latex'])
@@ -147,25 +176,25 @@ def html_visit_tikz(self, node):
         self.body.append('<span class="eqno">(%s)</span>' % node['number'])
     if fname is None:
         # something failed -- use text-only as a bad substitute
-        self.body.append('<span class="tikz">%s</span>' %
+        self.body.append('<span class="circuits">%s</span>' %
                          self.encode(node['latex']).strip())
     else:
-         c = ('<img class="tikz" src="%s/%s" %s' % (IMAGE_URL,fname,node['style']))
+         c = ('<img src="%s" %s' % (fname,node['style']))
          self.body.append( c + '/>')
     raise nodes.SkipNode
 
-def latex_visit_tikz(self, node):
+def latex_visit_circuits(self, node):
     self.body.append('$' + node['latex'] + '$')
     raise nodes.SkipNode
 
-def latex_visit_displaytikz(self, node):
+def latex_visit_displaycircuits(self, node):
     self.body.append(node['latex'])
     raise nodes.SkipNode
 
 def setup(app):
-    app.add_node(tikz,
-        latex=(latex_visit_tikz, None),
-        html=(html_visit_tikz,None))
-    app.add_directive('tikz', Tikz)
+    app.add_node(circuits,
+        latex=(latex_visit_circuits, None),
+        html=(html_visit_circuits,None))
+    app.add_directive('circuits', Circuits)
 
  
