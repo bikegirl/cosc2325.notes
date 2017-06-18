@@ -187,6 +187,14 @@ Testing Your Project
 
    appendix/travisci-introduction
 
+Accessing Secure Websites
+=========================
+
+.. toctree::
+   :maxdepth: 1
+
+   U2F/using-a-yubikey-for-u2f
+
 Bibliography
 ************
 
