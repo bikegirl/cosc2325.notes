@@ -109,6 +109,11 @@ Lecture 7: Tuesday, June 20
     You will have two hours to complete this exam.
 
 .. toctree::
+   :hidden:
+
+   exams/exam-1-lab
+
+.. toctree::
    :maxdepth: 1
 
    05_simulation/Docker/introducing-docker
@@ -151,6 +156,8 @@ Documenting Your Code
    :maxdepth: 1
 
    appendix/documentation
+   appendix/coding-style
+
 
 Source Code Control Systems
 ===========================
@@ -193,7 +200,7 @@ Accessing Secure Websites
 .. toctree::
    :maxdepth: 1
 
-   U2F/using-a-yubikey-for-u2f
+   appendix/U2F/using-a-yubikey-for-u2f
 
 Bibliography
 ************

@@ -10,10 +10,7 @@ from better import better_theme_path
 # -- General configuration ------------------------------------------------
 
 extensions = [
-    'sphinx.ext.viewcode',
     'sphinx.ext.imgmath',
-    'sphinx.ext.todo',
-    'sphinx.ext.autosummary',
     'sphinx_exts.tikz',
     'sphinx_exts.circuits',
     'sphinx_exts.wordcount',
