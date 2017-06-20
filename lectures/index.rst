@@ -116,6 +116,7 @@ Lecture 7: Tuesday, June 20
 .. toctree::
    :maxdepth: 1
 
+   05_simulation/pipeline-processing
    05_simulation/Docker/introducing-docker
 
 Assignments
