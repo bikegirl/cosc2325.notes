@@ -1,0 +1,25 @@
+#include "proc.h"
+#include <stdio.h>
+
+void proc(int val) {
+    printf("The parameter value was %d\n", val);
+}
+
+
+; Generated assembly language ——————————————————————
+_proc:
+	push	rbp
+	mov	rbp, rsp
+    ;-----------------------------
+	mov	rax, L_.str
+	mov	dword ptr [rbp - 4], edi
+	mov	esi, dword ptr [rbp - 4]
+	mov	rdi, rax
+	mov	al, 0
+	call	_printf
+    ;-----------------------------
+	pop	rbp
+	ret
+L_.str:
+	.asciz	"The parameter value was %d\n"
+

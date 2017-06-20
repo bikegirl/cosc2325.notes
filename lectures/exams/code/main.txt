@@ -1,0 +1,20 @@
+#include "proc.h"
+
+int main(int argc, char *argv[]) {
+    int x = 42;
+
+    proc(x);
+}
+
+; Generated assembly code ------------------
+_main: 
+	push	rbp
+	mov	rbp, rsp
+    ;——————————————————————————————————
+	mov	dword ptr [rbp - 20], 42
+	mov	edi, dword ptr [rbp - 20]
+	call	_proc
+	xor	eax, eax
+    ;——————————————————————————————————
+	pop	rbp
+	ret

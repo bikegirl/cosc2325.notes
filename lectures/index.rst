@@ -113,6 +113,15 @@ Lecture 7: Tuesday, June 20
 
    05_simulation/Docker/introducing-docker
 
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   exams/exam-1-lab
+   assignments/GP1
+
 Appendix
 ********
 
