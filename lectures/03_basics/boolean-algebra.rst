@@ -10,7 +10,7 @@ Boolean Algebra
 Math can be a lot of fun. (OK, so many folks cannot believe math can be called
 fun, but over the course of history, it sure has gotten a lot of attention.)
 
-Way back in 1854 George Boole published a book :cite:`boole:1854` where he
+Way back in 1854 George Boole published a book :cite:`Boole:1854` where he
 studied the mathematics of a number system with only two symbols: "0" and "1". We
 can also call those two values *true* or *false* if we wish, but let's stick
 with our familiar numbers.

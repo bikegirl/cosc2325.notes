@@ -532,8 +532,8 @@ of the function, telling people what it does, and possibly WHY it does
 it.
 
 When commenting the kernel API functions, please use the kernel-doc format.
-See the files at :ref:`Documentation/doc-guide/ <doc_guide>` and
-``scripts/kernel-doc`` for details.
+See the files at :ref:`doc-guide
+<https://www.kernel.org/doc/html/v4.11/doc-guide/index.html>` for details.
 
 The preferred style for long (multi-line) comments is:
 

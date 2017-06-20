@@ -91,7 +91,8 @@ There are several VM management tools available. Some are free, some you need to
 Windows PC
 ==========
 
-The CS lab machines all have **VMware Workstation** installed. This one is excellent, but not free. 
+The CS lab machines all have **VMware Workstation** installed. This one is
+excellent, but not free. 
 
 ..  note::
    
@@ -102,14 +103,10 @@ You can also install the free **VMware Player** application. This one can be
 used for free for non-commercial work, otherwise they want you to pay for a
 license. 
 
-Here is a link to the file you need:
 
-    * :download:`/files/VMware-player-12.5.6-5528349.exe`
-
-..  warning::
-
-    Attempting to download these files using the ACC wireless setup may fail.
-    They do not like downloading executable files.
+Here is a link to the download you need:
+code
+    * `VMware Player 12 <https://www.vmware.com/go/tryplayerpro-win-64>`_
 
 Another good tool is **Oracle VirtualBox** I use this one on my systems all the
 time, but we cannot get it running on CS lab machines.
