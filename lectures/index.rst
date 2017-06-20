@@ -104,14 +104,21 @@ Lecture 6: Thursday, Jun 15
 Lecture 7: Tuesday, June 20
 ***************************
 
-** Exam 1 ** 
+Exam 1
+====== 
 
     You will have two hours to complete this exam.
 
+Exam 1 Lab
+==========
+
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
    exams/exam-1-lab
+
+Lecture
+=======
 
 .. toctree::
    :maxdepth: 1
@@ -125,7 +132,6 @@ Assignments
 .. toctree::
    :maxdepth: 1
 
-   exams/exam-1-lab
    assignments/GP1
 
 Appendix
