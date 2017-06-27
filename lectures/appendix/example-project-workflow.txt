@@ -1,0 +1,60 @@
+Example Project Workflow
+########################
+
+You are starting out a new C++ project, and you want to learn how to do it
+"right". 
+
+..  warning::
+
+    There is no such thing as "right". There is just the process that works
+    for you. However, your boss may have other ideas!
+
+Where do you even begin. I know!
+
+Create a Github Repository
+**************************
+
+Actually, I am going to create two repositories: one for the project code, and
+another one for the project documentation. The reason for that is based on my
+desire to make this a teaching project. I want to show how my code evolves in
+my documentation. I am going to use Git_'s ability to move back in time and
+teach my documentation tool, Sphinx_, how to check out a previous version, and
+include code from that point in time into my documentation. For teaching, this
+is an incredible feature. 
+
+Unfortunately, that means I have to keep the code and documentation separate.
+If both code and docs were in the same repository, and I checked ouut a
+previous version - I also check out a previous version of the docs, which I do
+not think I want to do!
+
+For "normal" development, this two-repository scheme is not really needed.
+
+Git_ has a way for one repository to hold another repository, without getting
+confused. You use a "submodule" to do this. We need to set that up first.
+
+Begin by creating the two repositories on Github_. I usually start off with
+empty repositories. For this project, I created these two repositories in my
+Github_ account:
+
+    * https://github.cpom/rblack42/CPUsim
+    * https://github.cpom/rblack42/CPUsim-code
+
+The code repository will end up as a submodule under the base repository.
+
+Next, set up the project on your development workstation. (I use a Macbook Pro
+for my work, so these commands will look familiar to anyone working on a Mac,
+or on Linux.)
+
+..  code-block:: bash
+
+    $ mkdir CPUsim
+    $ cd CPUsim
+    $ git init
+
+You should always create a README file in your Github_ repository. I use |rst| for all my markup. Here is my starter version:
+
+..  literalinclude::    ../../../README.rst
+    
+
+
+

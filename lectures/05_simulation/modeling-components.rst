@@ -2,6 +2,7 @@ Modeling Components
 ###################
 
 ..  include::   /references.inc
+..  _Power:     https://en.wikipedia.org/wiki/Electric_power
 
 We will build basic components for our machine, using C++ class structures.
 Each component will have a very simple internal structure. There will be very

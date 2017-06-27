@@ -194,6 +194,6 @@ When is this due?
 *****************
 
 You will have three weeks to complete his project. Each group will present their
-findings in class on the first meeting of the week starting March 27.
+findings in class on July 10.
 
 ..  vim:filetype=rst spell:

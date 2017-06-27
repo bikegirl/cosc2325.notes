@@ -123,7 +123,6 @@ Lecture
 .. toctree::
    :maxdepth: 1
 
-   05_simulation/pipeline-processing
    05_simulation/Docker/introducing-docker
 
 Assignments
@@ -133,12 +132,57 @@ Assignments
    :maxdepth: 1
 
    assignments/GP1
+   assignments/GP1-teams
+
+Lecture 8: Thursday, June 22
+****************************
+
+.. toctree::
+   :maxdepth: 1
+
+   05_simulation/pipeline-processing
+   06_isa/EBNF/extended-backus-naur-form
+   06_isa/CAL/cpusim-assembly-language
+   06_isa/CAL/simulator-instructions
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/Lab3/lab3-control-unit
+
+Lecture 9: Tuesday, June 27
+***************************
+
+.. toctree::
+   :maxdepth: 1
+
+   06_isa/CAL/encoding-instructions
+   06_isa/RTL/register-transfer-language
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/HW5/working-with-rtl
 
 Appendix
 ********
 
 Nothing in this section will appear on any exams in this course. These notes
 cover tools you should know about as a software developer!
+
+Learning How To Code
+====================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/programmers-workflow
 
 The Developers Toolkit
 ======================
@@ -189,6 +233,7 @@ Source Code Control Systems
    appendix/Git/using-git
    appendix/Git/setting-up-on-github
    appendix/Git/getting-started-on-github
+   appendix/Git/git-secrets
 
 Building Your Project
 =====================
