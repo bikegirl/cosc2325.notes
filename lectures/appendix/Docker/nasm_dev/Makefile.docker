@@ -1,0 +1,12 @@
+APP	:=	hello
+
+all:	$(APP)
+	nasm -f elf64 -o $(APP).o $(APP).asm
+	gcc -o $(APP) $(APP).o
+
+run:	$(APP)
+	./$(APP)
+
+clean:
+	rm -f *.o 
+

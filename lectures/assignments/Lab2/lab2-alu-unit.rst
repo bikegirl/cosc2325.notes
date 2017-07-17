@@ -37,11 +37,14 @@ answer must be zero. Obviously,this value is wrong, but it is correct as far as
 the computer is concerned. That extra bit needs to be recorded somewhere, and
 we will use a special status flag to indicate that we generated a "carry". 
 
+Here is a reference that might help in detecting the overflow condition usinf strict C++ code:
+
+    * Detecting Overflow <https://stackoverflow.com/questions/199333/how-to-detect-integer-overflow>`_
+
 You need to think how to model this behavior in C++ code. (Oneway is to do math
 internally using a larger container, and test if the resultis too big. If so,
 the carry flag must be set, and the result modified (by truncating it to
 16-bits).
-
 Here is the header file for the ALU:
 
 ..  literalinclude::    /code/ALU/include/ALU.h
@@ -90,7 +93,7 @@ You should see no errors when this sequence completes. If you get here, your
 code works as specified. Guido and I will review the code itself to see if it
 is written properly!
 
-I will activate automatic testing on TavisCI_ as soon as I see your cloned repo
+I will activate automatic testing on TravisCI_ as soon as I see your cloned repo
 on Github_. Be sure to modify the badge link  in the project **README.rst**
 file, so it shows your status.
 

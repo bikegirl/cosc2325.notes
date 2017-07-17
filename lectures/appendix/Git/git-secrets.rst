@@ -1,6 +1,12 @@
 Storing Secrets with Git Vault
 ##############################
 
+:Reference: https://blog.threatstack.com/cloud-security-best-practicesfinding-securing-managing-secrets-part-1
+  
+:Reference: transcrypt
+
+:Reference: https://github.com/StackExchange/blackbox
+            
 Step 0: Install git-secrets
 ***************************
 

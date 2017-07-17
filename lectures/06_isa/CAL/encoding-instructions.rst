@@ -379,7 +379,7 @@ Stack Operations
 The stack will be implemented as a separate memory area. In our machine, it
 will be a simple arraty of integers. We will define a stack pointer ``SP``
 which always points to the current "top of stack". When the stack is created
-(before the first stack opertion,the stack is empyt and the value f the stack
+(before the first stack opertion,the stack is empty and the value of the stack
 pointer should be initialized so the first operation will point to the first
 slot in the stack memory. That means we initialize the stack pointer to -1,
 according to the wy we will manage this stack
@@ -411,6 +411,13 @@ PUSH SRC
     PC <- PC + 1
 
     Flags: None
+
+
+..  note::
+
+    The Pentium places the stack at the top of available memory, and it "grows"
+    downward. You should be sure you can change these operations so the stack
+    works properly in that situation.
 
 
 Logic Operations

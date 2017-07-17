@@ -105,7 +105,7 @@ license.
 
 
 Here is a link to the download you need:
-code
+
     * `VMware Player 12 <https://www.vmware.com/go/tryplayerpro-win-64>`_
 
 Another good tool is **Oracle VirtualBox** I use this one on my systems all the
@@ -113,7 +113,7 @@ time, but we cannot get it running on CS lab machines.
 
 Here is a link to get this program:
 
-    * `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_
+    * `VirtualBox Download <https://www.virtualbox.org/wiki/Downloads>`_
 
 Mac PC
 ======

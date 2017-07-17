@@ -1,0 +1,17 @@
+Analyzing Cache Performance
+###########################
+
+:Reference: `Cache Analysis <https://embedded.eecs.berkeley.edu/Alumni/rajeev/cs252/report/main/node17.html>`_
+
+Here is a slightly modified version of some code I found when looking into
+cache performance studies (see the reference above):
+
+..  literalinclude:: code/performance.c
+
+This program generates a *CSV* file suitable for loaing into Excel for
+plotting.
+
+Here are the results fro my Intel Core I7 (in my Macbook Pro Retina, which is
+about four years old!)
+
+

@@ -18,8 +18,6 @@
 
     * What is an "Instruction Set Architecture"
 
-    * What are the three major types of instructions in most processors?
-
     * Many processors use "Microinstructions" to control their operation.
       Basically, what is a microinstruction?
 

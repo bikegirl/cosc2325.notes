@@ -1,4 +1,4 @@
-Lab2: Modeling the Controller
+Lab3: Modeling the Controller
 #############################
 
 ..  include::   /references.inc
@@ -36,9 +36,13 @@ to build new code!
 Basic Controller Operation
 **************************
 
-The controller class will set up a fairly complete machine for you to run. The
-constructor should create a memory object and an ALU object. It will also need
-a few internal "registers" to do its work. Specifically, you will need these:
+The controller class will set up a fairly complete machine for you to run.  For
+this lab, we will only implement a few basic instructions, enough to see the
+machine in action.
+
+The Controller constructor should create a memory object and an ALU object. It
+will also need a few internal "registers" to do its work. Specifically, you
+will need these:
 
     * PC - program counter
     * IR - instruction register
@@ -48,7 +52,7 @@ Your controller will support a few  important "public" operations.
 
     * run - start the simulation loop
     * load_code - load instruction memory from a text file
-    * load_data - load data memory from a test file 
+    * load_data - load data memory from a text file 
 
 Running the Simulation
 ======================
@@ -67,29 +71,69 @@ loop.
 
 (You will need to tweak this code to deal with all requirements.
 
+Tracking Time
+=============
+
+There are two time related values we need to track in this controller object.
+The number of instructions processed, and the number of clock ticks consumed.
+
+If memory was really fast, then these two values would be the same. However,
+every time the controller needs to move data back and forth between the
+processor and memory, we have to deal with that "wait" situation. Your memory
+unit alrready has this set up, so the basic logic for tracking these two values
+is pretty simple. Each pass through the four-step loop bumps the instruction
+counter by one, and also increases the clock counter by one. Any memory access
+encountered inside the loop may inject additional counts to the clock counter.
+This will let us see the cost of accessing memory in our code.
+
+A simple way to deal with this is to make the four step functions return a
+clock count value if needed. Here is the idea:
+
+..  code-block:: c
+
+    instruction_count = 0;
+    clock_count = 0;
+    while(true) {
+        clock_count += fetch();
+        clock_count += decode();
+        clock_count += execute();
+        clock_count += retire();
+        instruction_count++;
+    }
+
+In this simulation, each "step" will consume a minimum of one clock tick. That
+means that one instruction takes at least four "ticks" to complete. A real processor
+can do one instruction in as little as one tick, but we need to explore
+pipelining to see how that works. For this lab, no pipelining is required.
+
+When the simulation is completed, you should report these two values to the
+user.
+
 Loading Memory
 ==============
 
-The **load_code** routine is needed to load the instruction memory. For this
-project, the code will consist of the following data items:
+We need a simple way to get code and data into the simulator's memory. For this
+project, we will use two text files, with one decimal number per line. The
+exact values placed in these files will need to be figured out, and the
+lectures on encoding instructions will help with this.
 
-    1. INST - a single byte with a code for ehte instruction
-    2. REG - a single byte with a code for eth eregister used (0-7) [optional]
-    3. LMEM - a 16-bit iteral or memory address
+..  note::
 
-The code file is a simple text file with decimal numbers, one per line. Refer to the SImultor INstruction Set lecture for details on encoding gthe instructions. 
+    I added an example program which is sufficient for this lab. It only needs
+    byte data.
 
+The **load_code** routine is needed to load the instruction memory.  The
+**load_data** routine does a similar thing with the program data memory. 
 
-The **load_data** routine does a similar thing with the program data memory. 
-
-8 or 16 bit data items are allowed, and it will be up to the instruction to
-load them correctly. We will talk about this in class.
+This lab can be limited to just byte data. You do not need to modify your
+memory or ALU code, we will just ignore word data for this lab.
 
 ALU Operations
 ==============
 
 Unlike memory, the ALU is typically very fast, especially for simple integer
-operations. We do not need to worry aout timing in this lab.
+operations. We do not need to worry aout timing in this lab. You can assume
+that all ALU operations happen n one clock tick.
 
  
 Testing Your Class 
@@ -97,15 +141,14 @@ Testing Your Class
 
 I have included some example code in the **main.cpp** file. This code shows how
 we can deal with options on the command line when we run the application. Look
-this over, since we will use it later. For now, you can leave this code alone,
-or play with it if you like. 
+this over, since we will use it later.
 
 ..  literalinclude::    main.cpp
     :linenos:
     :language: c
     :caption: main.cpp
 
-You need to add tests to make sure your new COntroller class operates properly.
+You need to add tests to make sure your new Controller class operates properly.
 
 Remember that this test code uses the Catch_ testing system. You will need to
 set up a project, as discussed in class, so these tests run properly. You also
@@ -121,7 +164,7 @@ You should see no errors when this sequence completes. If you get here, your
 code works as specified. Guido and I will review the code itself to see if it
 is written properly!
 
-I will activate automatic testing on TavisCI_ as soon as I see your cloned repo
+I will activate automatic testing on TravisCI_ as soon as I see your cloned repo
 on Github_. Be sure to modify the badge link  in the project **README.rst**
 file, so it shows your status.
 

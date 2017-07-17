@@ -1,0 +1,30 @@
+Assessing Cache Performance
+###########################
+
+My Macbook Pro as an Intel 4th Generation Core I7 (Haswell) chip with
+thefollowing cache specs:
+
+:Reference: http://ark.intel.com/products/75128/Intel-Core-i7-4800MQ-Processor-6M-Cache-up-to-3_70-GHz
+http://www.notebookcheck.net/Intel-Core-i7-4800MQ-Notebook-Processor.86105.0.html
+ 
+    * Processor speed: 2.7GHz (Turo to 3.7GHz)
+    * Cores: 4
+    * Threads: 8
+    * stepping: 9
+    * model: 10
+    * family: 6
+
+    * Max Memory size: 32G
+    *Maxmemory channels: 2
+Memory type: DDR3L 1333/1600
+    * Max Memory andwidth: 25.6GB/s
+
+    
+    * L1 cache: 256KB
+    * L2 cache: 1024 KB
+    * L3 cache: 6144 KB (smart cache)
+
+    * Transisor count: 1400 million
+    * Die sizeL 177 mm2
+    * Technology: 22nm
+

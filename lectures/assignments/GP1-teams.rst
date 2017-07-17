@@ -15,7 +15,6 @@ Bravo
 *****
 
     * Cole werner
-    * Suengman Chang
     * William Marshall
     * Richard Lin
 
@@ -44,12 +43,7 @@ Foxtrot
     * Robert Tomlinson
     * Serena Gutierrez
     * Justin Pope
-
-
-Not assigned
-************
-
-    * James Rumph (did not register - see me)
+    * James Rumph
 
 Teams should exchange email addresses, so you can keep in touch outside of class.
 

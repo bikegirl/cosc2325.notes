@@ -144,6 +144,7 @@ Lecture 8: Thursday, June 22
    06_isa/EBNF/extended-backus-naur-form
    06_isa/CAL/cpusim-assembly-language
    06_isa/CAL/simulator-instructions
+   06_isa/CAL/example-cpusim-code
 
 Assignments
 ===========
@@ -159,6 +160,7 @@ Lecture 9: Tuesday, June 27
 .. toctree::
    :maxdepth: 1
 
+   06_isa/CAL/designing-the-cpusim-isa
    06_isa/CAL/encoding-instructions
    06_isa/RTL/register-transfer-language
 
@@ -170,6 +172,89 @@ Assignments
 
    assignments/HW5/working-with-rtl
 
+Lecture 10: Thursday, June 29
+*****************************
+
+.. toctree::
+   :maxdepth: 1
+
+   06_isa/CAL/cpusim-instruction-encoding
+   07_pentium/inside-the-pentium
+   07_pentium/simple-assembly-language
+   07_pentium/pentium-data-operations
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/HW6/pentium-hello
+
+Lecture 11: Thursday, July 6
+****************************
+
+.. toctree::
+   :maxdepth: 1
+
+   07_pentium/managing-registers
+   07_pentium/addressing-modes
+   07_pentium/array-data
+   07_pentium/procedures
+
+Lecture 12: Tuesday, July 11
+****************************
+
+Group Project I Demos
+=====================
+
+We will start off with project show and tell!
+
+.. toctree::
+   :maxdepth: 1
+
+   08_memory/storage-technologies
+   08_memory/caching
+
+Lecture 11: Thursday, July 13
+*****************************
+
+.. toctree::
+   :maxdepth: 1
+
+   09_microcontrollers/embedded-machines
+   09_microcontrollers/installing-arduino-on-ubuntu
+   09_microcontrollers/building-arduino-programs
+   09_microcontrollers/basic-avr-assembly
+   exams/exam-2-review
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   assignments/GP2/index
+   assignments/HW7/avr-hello
+
+Lecture 14: Tuesday, July 18
+*****************************
+
+Exam 2
+====== 
+
+    You will have two hours to complete this exam.
+
+
+Assignments
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   exams/extra-credit
+   assignments/Lab4/lab4-number-conversion
+   
 Appendix
 ********
 
@@ -255,6 +340,14 @@ Testing Your Project
 
    appendix/travisci-introduction
 
+Docker for Software Development
+===============================
+
+.. toctree::
+   :maxdepth: 1
+
+   appendix/Docker/docker-development-workflow
+   
 Accessing Secure Websites
 =========================
 

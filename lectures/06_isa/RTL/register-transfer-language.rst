@@ -20,12 +20,33 @@ notation like this:
 
        A <- B
 
-This notation indicates that data available on register **B** are transferred
+..  note::
+
+    RTL is just a mathematical notation, used to think about how data moves
+    over wires between holding points we call "registers". This notation, like
+    mathematics, is not a programming language, just a form of shorthand. There
+    are formal definitions of RTL around, and those definitions are found in
+    specialized languages designed for use in defining hardware.  Yikes!
+    Hardware design has turned into a software project!
+
+This notation indicates that data available in register **B** are transferred
 to register **A**. We assume that this transfer happens when a clock signal
-occurs. The clock synchronizes the machine, and we indicate transfers at
+occurs. The clock synchronizes the machine, and we can indicate transfers at
 specific ticks of the clock. A single function in the machine may take several
-clock tocks to complete. We call each specific step a micro-operation, or
-mu-op. 
+clock tocks to complete. We call each specific step a *micro-operation*, or
+*mu-op*. 
+
+Register names are capitalized in this notation. They are not "variables" as in
+programming. They are physical components we need in our machine to make things
+work. We will see that RTL actually can be used to design a machine, and the
+set of registers we define end up as real components in the final design. We
+introduce registers so we can control the flow of data from one point to
+another in a machine. (Think about these data movement actions like statements
+in your program. They happen in a particular sequence, and that sequence is
+important in getting things moved around inside the machine.)
+
+Conditional Transfers
+=====================
 
 We can indicate that the transfer only happens if some condition is met by
 indicating the condition on the transfer line:

@@ -24,6 +24,7 @@
 ..  _CSS3:          http://www.w3schools.com/css/css3_intro.asp
 ..  _Docker:        https://www.docker.com/
 ..  _`Docker Cloud`: https://cloud.docker.com/
+..	_`Docker Hub`:	https://hub.docker.com/
 ..  _docutils:      http://docutils.sourceforge.net/
 ..  _DropBox:       https://www.dropbox.com
 ..  _DynDNS:        http://dyndns.com/
@@ -51,6 +52,7 @@
 ..  _MacTeX:        https://tug.org/mactex/
 ..  _MacVim:        https://code.google.com/p/macvim/
 ..  _Make:          https://www.gnu.org/software/make/
+..	_Marssx86:		http://marss86.org/~marss86/index.php/Home
 ..  _MikTeX:        http://miktex.org/
 ..  _MinGW:         http://mingw-w64.sourceforge.net/
 ..  _MySQL:         https://www.mysql.com/
@@ -80,6 +82,7 @@
 ..  _Ubuntu:        http://www.ubuntu.com/
 ..  _Vim:           http://www.vim.org/
 ..  _Vagrant:       https://www.vagrantup.com/
+..	_VirtualBox:	https://www.virtualbox.org/wiki/VirtualBox
 ..  _virtualenv:    https://pypi.python.org/pypi/virtualenv
 ..  _VMWare:        http://www.vmware.com/
 ..  _YAML:          http://yaml.org/

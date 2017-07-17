@@ -1,0 +1,9 @@
+Memory Mountain Plot
+####################
+
+A common way to assess how your mrmory is performing is to build a "Memory Mountain" plot. Bsically this is a 3D surface plot with these axes:
+
+    * X - access stride (from 0 to 64)
+    * Y - Array Size (2k - 32m)
+    * Z Bandwidth (1000 - 8000 MB/sec)
+
